@@ -1,0 +1,109 @@
+.main-button {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-color: unset;
+  border-width: unset;
+  border-style: unset;
+  cursor: pointer;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.main-button-radius {
+  @extend .main-button;
+  border-radius: 7px;
+}
+
+.main-button-radius-20 {
+  @extend .main-button;
+  border-radius: 20px;
+}
+
+.investment-button {
+  @extend .main-button-radius;
+  background-color: #9D9D9D;
+  padding: 10px;
+  width: 240px;
+  p {
+    color: white;
+  }
+  &:hover {
+    background-color: $true-blue;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.deposit-button {
+  @extend .main-button-radius;
+  background-color: $true-blue;
+  padding: 10px;
+  width: 160px;
+  p {
+    color: white;
+  }
+  &:hover {
+    background-color: $true-blue;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.deposit-button-gray {
+  @extend .main-button-radius;
+  background-color: #9D9D9D;
+  padding: 10px;
+  width: 160px;
+  p {
+    color: white;
+  }
+  &:hover {
+    background-color: $true-blue;
+    text-decoration: none;
+    color: white;
+  }
+  margin-top: 20px;
+  @media (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
+
+.deposit-button-voucher, .personal-button-psw {
+  @extend .main-button-radius;
+  background-color: $electric-blue;
+  padding: 10px;
+  width: 203px;
+  p {
+    color: white;
+  }
+}
+
+.deposit-button-voucher, .deposit-button-confirm {
+  margin-top: 20px;
+  @media (min-width: 768px) {
+    margin-top: 25px;
+  }
+}
+
+.deposit-button-confirm, .personal-button-changes {
+  @extend .main-button-radius-20;
+  background-color: $true-blue;
+  padding: 10px;
+  width: 150px;
+  color: white;
+}
+
+.personal-button-psw, .personal-button-changes {
+  display: initial;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.personal-button-changes {
+  width: 203px;
+}
